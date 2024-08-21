@@ -22,6 +22,7 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'primary-color':'#ABEF5F',
               }
             }
           }
@@ -30,7 +31,121 @@
 </head>
 <body class="manrope">
     <!-- header-section  -->
-    <header></header>
+    <header class="bg-[#F4F4F4]">
+        <!-- navber -->
+         <nav class="container m-auto py-5">
+          <div class="navbar bg-[#F4F4F4]">
+            <div class="navbar-start">
+              <button class="btn btn-circle bg-[#ABEF5F]">
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                class="h-5 w-5  -rotate-90  rounded-full"
+                fill="none" 
+                viewBox="0 0 24 24"
+                 stroke="currentColor" 
+                 className="size-6">
+                <path 
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25" />
+              </svg>  
+              </button>            
+              <a class="btn btn-ghost text-3xl font-bold text-black pl-1">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 md:gap-10 text-xl font-semibold text-[#737373]">
+                <li class="font-bold text-[#494949]">Home</li>
+                <li>Searvice</li>
+                <li>Portfolio</li>
+                <li>Blogs</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <div class="md:block hidden"> 
+                <div class="flex">
+                  <!-- search-icon  -->
+                  <button class="btn btn-circle bg-[#FFFFFF]">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </button>
+                  <!-- shope-icon  -->
+                  <button class="btn bg-[#FFFFFF] btn-circle mx-3">
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <!-- end section with btn  -->
+                <div class="md:block hidden">
+                  <a class="btn bg-primary-color text-xl font-extrabold rounded-3xl flex flex-col">Book Consult
+                    <button class=" p-1 lg:p-2 rounded-full text-white bg-[#000000]">
+                      <svg xmlns="http://www.w3.org/2000/svg" 
+                      class="h-5 w-5  -rotate-90  "
+                      fill="none" 
+                      viewBox="0 0 24 24"
+                       stroke="currentColor" 
+                       className="size-6">
+                      <path 
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25" />
+                    </svg>  
+                    </button>  
+                  </a>
+                </div>
+                <!-- dropdown  -->
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3  p-2 shadow w-[80px] right-4 text-md">
+                  <li>Home</li>
+                  <li>Searvice</li>
+                  <li>Portfolio</li>
+                  <li>Blogs</li>
+                  <li>Contact Us</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+         </nav>
+         
+    </header>
     <!-- main-section  -->
     <main></main>
     <!-- footer-section -->
