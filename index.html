@@ -16,6 +16,8 @@
         font-family: "Manrope", sans-serif;
     }
     </style>
+    <!-- fontawesome CDN  -->
+    <script src="https://kit.fontawesome.com/ce75c5c5e8.js" crossorigin="anonymous"></script>
     <!-- tailwindcss and daisyUi CDN  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -151,9 +153,9 @@
         <div class="hero bg-transparent">
           <div class="hero-content text-center mb-5">
             <div class="w-11/12 md:9/12 lg:w-9/12 m-auto">
-              <img class="w-12/12 md:w-9/12 m-auto" src="./assets/banner.png" alt="">
+              <img class="w-12/12 md:w-9/12 m-auto pb-5" src="./assets/banner.png" alt="">
               <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold manrope text-[#212121]">A barn house of this design has a striking appearance</h1>
-              <p class="py-6 text-sm md:text-xl lg:text-2xl w-full">
+              <p class="py-6 text-sm md:text-xl lg:text-2xl w-full font-semibold text-[#494949]">
                 The barn house captivates with its blend of rustic charm and modern sophistication,
                 featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
               </p>
@@ -181,7 +183,70 @@
       </div>
     </header>
     <!-- main-section  -->
-    <main></main>
+    <main class="">
+      <!-- about-section  -->
+      <div class="bg-[#F4F4F4] ">
+        <div class=" lg:block lg:ml-40 lg:pt-16 hidden">
+          <img src="./assets/Vector.png" alt="">
+        </div>
+        <div class="container  mx-auto">
+          <div class="flex-col md:flex lg:flex-row justify-between">
+            <!-- content-section  -->
+             <div class="w-11/12 md:w-11/12 lg:w-6/12 m-auto">
+                <div class="w-5/12 m-auto md:m-auto lg:m-0">
+                  <a class="btn bg-[#white] text-xl font-extrabold rounded-3xl mt-5">
+                    <button class=" p-1 lg:p-2 rounded-full text-[#000000]">
+                      <svg xmlns="http://www.w3.org/2000/svg" 
+                      class="h-5 w-5 -rotate-45"
+                      fill="none" 
+                      viewBox="0 0 24 24"
+                      stroke="currentColor" 
+                      className="size-6">
+                      <path 
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25" />
+                    </svg>  
+                    </button>About Us
+                  </a>
+                </div>
+                <h1 class="text-center text-3xl lg:text-left lg:text-4xl font-extrabold py-2">We design thoughtful, liveable spaces</h1>
+                <p class="text-center lg:text-left md:text-lg lg:text-lg text-sm py-5 font-semibold">
+                  Fireplace: A welcoming fireplace can be a focal
+                  point in a rustic home. Whether it’s a traditional wood-burning fireplace or a modern electric one, it adds warmth
+                </p>
+                <div class="md:flex lg:flex-col">
+                  <div class="flex justify-between bg-white rounded-xl py-5 px-2 mb-5 items-center">
+                    <img class="p-2 lg:pl-5" src="./assets/commercial.png" alt="">
+                    <!-- content box1 -->
+                    <div class="lg:w-10/12 w-full">
+                      <h1 class="text-lg font-bold text-[#212121] py-2">Commercial</h1>
+                      <p class="text-[#737373] md:text-lg lg:text-lg text-sm font-semibold">
+                        Rustic Furniture: Choose furniture made from natural or reclaimed wood. Farmhouse-style tables, 
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between bg-white rounded-xl py-5 px-2 mb-5 items-center">
+                    <img class="p-2 lg:pl-5" src="./assets/residential.png" alt="">
+                    <!-- content box1 -->
+                    <div class="w-10/12">
+                      <h1 class="text-lg font-bold text-[#212121] py-2">Residential</h1>
+                      <p class="text-[#737373] md:text-lg lg:text-lg text-sm font-semibold">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring                      </p>
+                    </div>
+                  </div>
+                </div>
+             </div>
+             <!-- image-section  -->
+             <div class="w-11/12 lg:h-full lg:w-8/12 md:w-11/12 lg:ml-96 lg:pl-28 m-auto">
+              <img class="h-64 w-full md:h-80 md:self-center lg:h-full" src="./assets/Rectangle.png" alt="">
+             </div>
+          </div>
+        </div>
+      </div>
+      
+    </main>
     <!-- footer-section -->
     <footer></footer>
 </body>
