@@ -9,6 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <style>
+       .bg-image{
+            background-image: url(./assets/bg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
         .rgb-bg{
           background: linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);
         }
@@ -499,7 +505,7 @@
         </div>
       </div>
       <!-- Read Our Articles and News -->
-      <div class="bg-[#F4F4F4]">
+      <div class="bg-[#F4F4F4] pb-5 lg:pb-20">
         <div class="container m-auto ">
           <div class="bg-transparent py-16 mt-0">
             <div>
@@ -645,11 +651,11 @@
       </div>
       <!-- Let’s Discuss Next Project -->
        <!-- input-section -->
-        <div class="">
-          <div class="container m-auto">
+        <div class="bg-image w-full">
+          <div class="container m-auto py-10 lg:py-20">
             <!-- input-content  -->
             <div>
-              <div class="pt-20">
+              <div class="">
                 <div class="flex items-center justify-center bg-[#ABEF5F33] py-2 px-2 lg:w-[200px] w-4/6 m-auto rounded-3xl">
                   <img class="w-5 h-5" src="./assets/arrow-right.svg" alt="">
                   <p class="pl-2 font-semibold">Let’s Connect</p>
@@ -657,13 +663,36 @@
                 <h1 class="lg:text-5xl text-3xl text-center text-[#212121] font-extrabold my-5 ">Let’s Discuss Next Project</h1>
                 <p class="text-center text-sm lg:text-lg text-[#494949] font-semibold mb-5 w-11/12 lg:w-7/12 m-auto">
                   That sounds exciting! Let’s dive into the details of your next project. Here are a few questions to get us started:
-                  Project Goals: What are the main objectives you want to achieve with this project?
-                  Scope and Requirements: Do you have a list of specific features or functionalities you need?
+                  Project Goals: What are the main objectives you want to achieve with this project
                 </p>
               </div>
             </div>
             <!-- input-container  -->
-            <div></div>
+            <div class="w-11/12 lg:w-7/12 m-auto py-5 grid grid-cols-1 lg:grid-cols-2 lg:gap-5 gap-5 ">
+              <input type="text" placeholder="*First Name" class="input input-bordered w-full  rounded-3xl" />
+              <input type="text" placeholder="*Last Name" class="input input-bordered w-full  rounded-3xl" />
+              <input type="text" placeholder="*Phone Number" class="input input-bordered w-full rounded-3xl" />
+              <input type="text" placeholder="*Email Address" class="input input-bordered w-full  rounded-3xl" />
+              <textarea placeholder="*Write your message here..." class="h-48 textarea textarea-bordered textarea-lg w-full rounded-3xl lg:col-span-2"></textarea>
+            </div>
+            <div class="w-11/12 lg:w-7/12 m-auto Send Mail">
+              <a class="btn bg-primary-color text-xl text-[#1C1C1C] font-extrabold rounded-3xl flex w-full"> Sent Mail
+                <button class=" p-1 lg:p-2 rounded-full text-white bg-[#000000]">
+                  <svg xmlns="http://www.w3.org/2000/svg" 
+                  class="h-5 w-5  -rotate-90  "
+                  fill="none" 
+                  viewBox="0 0 24 24"
+                   stroke="currentColor" 
+                   className="size-6">
+                  <path 
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  d="m4.5 4.5 15 15m0 0V8.25m0 11.25H8.25" />
+                </svg>  
+                </button>  
+              </a>
+            </div>
           </div>
         </div>
     </main>
